@@ -4,9 +4,9 @@ const {
 } = require('./src/constants.js');
 
 if (EXECUTE_PROCESS_TASK) {
-  require('./src/processTask.js');
+  require('./src/challenges/processTask.js');
 }
 
 if (EXECUTE_VALIDATE_CHAR_PAIRS) {
-  require('./src/validateCharPairs.js');
+  require('./src/challenges/validateCharPairs.js');
 }

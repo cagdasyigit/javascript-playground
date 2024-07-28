@@ -9,7 +9,7 @@
   Solution: Return the task name for the index given by parameter z.
 */
 
-const { expect } = require('./utils');
+const { expect } = require('../utils');
 
 // Params: x = [3, 2, 3, 1, 4], y = [-1, 4, -1, -1, 3]
 
@@ -96,10 +96,10 @@ if (RUN_TESTS) {
 
   console.log('*** Process Task Tests ***');
   expect('Test 1:', test1, 0);
-  expect('Test 1:', test2, 3);
-  expect('Test 1:', test3, 4);
-  expect('Test 1:', test4, 8);
-  expect('Test 1:', test5, 0);
+  expect('Test 2:', test2, 3);
+  expect('Test 3:', test3, 4);
+  expect('Test 4:', test4, 8);
+  expect('Test 5:', test5, 0);
   console.log('*** Process Task Tests End ***');
 } else {
   const task = getTaskIndexAtCycle(

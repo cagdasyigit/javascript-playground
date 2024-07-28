@@ -4,7 +4,7 @@
   Incorrect examples: [, (}){, {], etc
 */
 
-const { expect } = require('./utils');
+const { expect } = require('../utils');
 
 const RUN_TESTS = true;
 
@@ -44,7 +44,7 @@ if (RUN_TESTS) {
   expect('Test 2:', validate('[({})]'), true);
   expect('Test 3:', validate('[({)]'), false);
   expect('Test 4:', validate('[(}{)]'), false);
-  expect('Test 4:', validate('[(){}]'), true);
+  expect('Test 5:', validate('[(){}]'), true);
   console.log('*** Validate Char Pairs Tests End ***');
 } else {
   const isValid = validate('[({)}]');
